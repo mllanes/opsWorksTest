@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000,
 var log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
-THIS THING Is GOINT TO BREAK!!!
+
 var server = http.createServer(function (req, res) {
     if (req.method === 'POST') {
         var body = '';
